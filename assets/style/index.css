@@ -257,6 +257,9 @@ lines when they no longer fit on the initial line
     .column {
         width: calc(50% - 10px);
     }
+    #dvLogin {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
