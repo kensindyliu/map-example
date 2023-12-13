@@ -258,7 +258,7 @@ lines when they no longer fit on the initial line
         width: calc(50% - 10px);
     }
     #dvLogin {
-        margin-top: 20px;
+        margin-top: 35px;
     }
 }
 
