@@ -1,0 +1,216 @@
+main .container {
+    width: min(100% - 30px, 1080px);
+    margin-inline:auto;
+    height: 100%;
+    color: rgb(156, 155, 155);
+    margin-bottom: 40px;
+}
+
+main .banner_small {
+    width: 100%;
+    background-color:rgb(241, 249, 250);
+    height: var(--app-detail-banner-height);
+    justify-content: center;
+}
+
+main .banner_small div {
+    line-height: var(--app-detail-banner-height);
+}
+
+main .contact {
+    background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 360px;
+}
+
+.aboutus_h2 {
+    height: 50px;
+}
+
+.aboutus_article {
+    margin: 40px 0px;
+    font-size: 14px;
+}
+
+.aboutus_rows {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutus_column {
+    width: calc(33.33333% - 20px);
+    flex: 1 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 0px 5px 1px -4px rgb(232, 227, 227);
+}
+
+main .aboutus {
+    background-image: url(../img/aboutus.jpg);
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 360px;
+}
+
+main .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .logo {
+    text-align: right;
+}
+
+
+main h1 {
+    font-size: 32px;
+    color: rgb(76, 74, 74);
+}
+
+main h2 {
+    font-size: 20px;
+    color: rgb(76, 74, 74);
+}
+
+main p,li{
+    font-size: 14px;
+}
+
+main .contact_content {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+main .column {
+    flex: 1 0 auto;
+    width: calc(50% - 10px);
+    border-radius: 5px;
+    
+}
+
+main .column:nth-of-type(1) {
+    box-shadow: 5px 0px 2px -5px rgb(0 0 0 / 0.3);
+}
+
+main .pic img{
+    height: 300px;
+    box-shadow: 2px 4px 7px rgb(0 0 0 / 0.3);
+    border-radius: 15px;
+}
+
+main .googlemap {
+    margin-top: 20px;
+    width: 100%;
+    
+}
+
+.maps {
+    position: relative;
+}
+
+.maps::before {
+    display:inline-block;
+	position:absolute;
+    top: 46%;
+    left: 52%;
+    width: 40px;
+    height: 40px;
+    content: "";
+    background-image: url("../img/spot.png");
+    background-size: 40px;
+}
+
+
+.article {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+article{
+    margin: 40px 30px;
+}
+
+lable {
+    font-weight:600;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+
+main form {
+    margin-top: 10px;
+}
+
+main input, main textarea {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 186, 186);
+    padding-left: 5px;
+    width:80%;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main input:focus, main textarea:focus {
+    border: 1px solid rgb(235, 226, 226);
+}
+
+main textarea {
+    height: 150px;
+}
+
+main input[type=button] {
+    width:150px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+    background-color: #3333ff;
+    
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 0px;
+}
+
+main input[type=button]:focus {
+    background-color: #4d4dff;
+    
+}
+
+@media screen and (max-width: 768px) {
+    main .pic img{
+        width : 100%;
+    }
+    main .column{
+        width: 100%;
+    }
+    main .column:nth-of-type(1) {
+        box-shadow: 0px 0px 0px;
+    } 
+    
+}
+
+@media screen and (max-width: 480px) {
+    .aboutus_column {
+        width: calc(50% - 10px);
+    }
+    
+}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/*------------------------------------------*/
+/* Reset Style                              */
+/*------------------------------------------*/
+:root {
+    --app-detail-banner-height: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline:none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    font-family:"Nunito Sans", "Open Sans", "Arial",  sans-serif;
+}
+
+body {
+    font-family: "Nunito Sans","Open Sans", Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-inline: auto;
+    background-color:#fff;
+}
+
+/* ken */
+.container{
+    width: min(100% - 60px, 1080px);
+    margin-inline: auto;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited {
+    color: grey; /* Set a different color for visited links */
+}
+
+a:hover {
+    color: rgb(149, 143, 143); 
+}
+
+h1,a, span {
+    letter-spacing: 0.3px;
+}
+/*ken end/
