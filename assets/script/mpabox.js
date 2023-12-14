@@ -43,10 +43,15 @@ if (navigator.geolocation) {
     console.log('Geolocation is not supported by this browser.');
 }
 
+let isNeedMarker = true;
+
 function getPosition(position) {
-    new mapboxgl.Marker()
-    .setLngLat([position.coords.longitude, position.coords.latitude])
-    .addTo(map);
+    if(isNeedMarker){
+        new mapboxgl.Marker()
+        .setLngLat([position.coords.longitude, position.coords.latitude])
+        .addTo(map);
+        isNeedMarker = false;
+    }
     map.setCenter([position.coords.longitude, position.coords.latitude]);
 
     console.log("Latitude: " + position.coords.latitude);
