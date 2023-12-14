@@ -43,20 +43,16 @@ if (navigator.geolocation) {
     console.log('Geolocation is not supported by this browser.');
 }
 
-let isNeedMarker = true;
-
+const marker = new mapboxgl.Marker()
 function getPosition(position) {
-    if(isNeedMarker){
-        new mapboxgl.Marker()
-        .setLngLat([position.coords.longitude, position.coords.latitude])
-        .addTo(map);
-        isNeedMarker = false;
-    }
+    marker
+    .setLngLat([position.coords.longitude, position.coords.latitude])
+    .addTo(map);
     map.setCenter([position.coords.longitude, position.coords.latitude]);
 
-    console.log("Latitude: " + position.coords.latitude);
-    console.log("Longitude: " + position.coords.longitude);
-    console.log("Accuracy: " + position.coords.accuracy + " meters");
+    // console.log("Latitude: " + position.coords.latitude);
+    // console.log("Longitude: " + position.coords.longitude);
+    // console.log("Accuracy: " + position.coords.accuracy + " meters");
     // You can use position.coords.latitude and position.coords.longitude here
     // For example, to show the location on a map
 }
